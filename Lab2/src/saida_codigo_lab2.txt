@@ -1,0 +1,46 @@
+Quarto lacaio:
+Gandalf (ID: 6)
+Ataque = 0
+Vida Atual = 0
+Vida Maxima = 0
+Custo de Mana = 9
+
+Primeiro lacaio:
+Frodo Bolseiro (ID: 1)
+Ataque = 8
+Vida Atual = 1
+Vida Maxima = 1
+Custo de Mana = 1
+
+Primeira magia:
+CartaMagia@15db9742
+Quinto lacaio:
+Aragorn (ID: 2)
+Ataque = 5
+Vida Atual = 7
+Vida Maxima = 7
+Custo de Mana = 6
+
+Segundo lacaio:
+Aragorn (ID: 2)
+Ataque = 5
+Vida Atual = 7
+Vida Maxima = 7
+Custo de Mana = 6
+
+Telecinese
+Telecinese
+
+Segundo lacaio:
+Aragorn Fortalecido (ID: 2)
+Ataque = 10
+Vida Atual = 12
+Vida Maxima = 7
+Custo de Mana = 6
+
+Terceiro lacaio:
+Legolas Fortalecido (ID: 3)
+Ataque = 12
+Vida Atual = 9
+Vida Maxima = 4
+Custo de Mana = 6
