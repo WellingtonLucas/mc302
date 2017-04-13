@@ -1,0 +1,68 @@
+•Refatore as cartas CartaLacaio e CartaMagia para Lacaio e Magia.
+
+• Modifique a classes Lacaio e Magia para que elas tenham herdem os atributos comuns da classe
+Carta (denominada superclasse).
+
+public class Lacaio extends Carta {
+}
+public abstract class Magia extends Carta {
+}
+• Refaça a programação dos métodos construtores das classes taLacaio e Magia, de acordo com o
+conceito de herança.
+	public Lacaio(String nome, int custoMana, int ataque, int vidaAtual, int vidaMaxima) {
+		this(UUID.randomUUID(), nome, custoMana, ataque, vidaAtual, vidaMaxima);
+	}
+
+	public Lacaio(UUID id, String nome, int custoMana, int ataque, int vidaAtual, int vidaMaxima) {
+		super(id, nome, custoMana);
+		this.ataque = ataque;
+		this.vidaAtual = vidaAtual;
+		this.vidaMaxima = vidaMaxima;
+	}
+	
+		public Magia(UUID id, String nome, int custoMana) {
+		super(id, nome, custoMana);
+
+	}
+
+	public Magia(String nome, int custoMana) {
+		super(nome, custoMana);
+	}
+
+• Refaça a programação dos métodos get e set das classes Lacaio e Magia.
+public int getAtaque() {
+		return ataque;
+	}
+
+	public void setAtaque(int ataque) {
+		this.ataque = ataque;
+	}
+
+	public int getVidaAtual() {
+		return vidaAtual;
+	}
+
+	public void setVidaAtual(int vidaAtual) {
+		this.vidaAtual = vidaAtual;
+	}
+
+	public int getVidaMaxima() {
+		return vidaMaxima;
+	}
+
+	public void setVidaMaxima(int vidaMaxima) {
+		this.vidaMaxima = vidaMaxima;
+	}
+• Ajustes os métodos toString para que estes utilizem os métodos já definidos em suas superclasses.
+@Override
+    public String toString() {
+        return super.toString() + "Lacaio{" + "ataque=" + ataque + ", vidaAtual=" + vidaAtual + 
+                                  ", vidaMaxima=" + vidaMaxima + '}';
+    }
+        
+
+@Override
+    public String toString() {
+        return super.toString() + "Magia{" + '}';
+    }
+		

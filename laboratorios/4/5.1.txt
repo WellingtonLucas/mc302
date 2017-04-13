@@ -1,0 +1,31 @@
+1. A instanciação de objetos do tipo Carta fazem sentido neste exemplo? Por quê?
+   
+   A classe Carta é abstrata e não pode ser instanciada 
+
+2. Considerando a implementação atual das classes, você acredita que seria possível criar um array para armazenar objetos das classes Carta, Lacaio e Magia? Se sim, como isso poderia ser feito?
+
+  public class Baralho {
+	         private Carta[] vetorCartas;
+	         private int nCartas;
+	         private static Random gerador = new Random();
+                       .
+                       .
+                       .
+
+                       }
+
+
+
+3. É possível acessar o atributo ataque diretamente na classe Lacaio? Explique.
+
+4. Imagine que existe um método estático meuMétodoEstático declarado na classe Carta. Seria possível chamá-lo nas classes filhas? Em caso afirmativo, que instrução deveria ser empregada neste caso?
+
+
+
+
+5. Quais os benefícios de implementar herança neste cenário?
+    
+   1º reutilização de atributos e métodos. Por exemplo, os atributos id, nome que foram declarados apenas na superclasse e aproveitados nas subclasses. Outro examplo é o metodo agir, que foi declarado na superclasse e sobrescrito nas subclasses.
+
+   2º
+   
