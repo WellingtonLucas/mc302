@@ -26,7 +26,7 @@ public class Main {
         Baralho.setDeterministico(false);
 
         // A verbosidade define se o Motor deve exibir mensagens para cada Jogada feita pelos Jogadores (0=não mostrar mensagens, 1=mostrar mensagens).
-        int verbosidade = 1;
+        int verbosidade = 0;
 
         // A tempoLimite define se o Motor deve exigir do Jogador que processe suas jogadas dentro de um limite de tempo (0=sem limite, 1=com limite).
         int tempoLimite = 0;
@@ -148,7 +148,7 @@ public class Main {
         // Inicializa os Jogadores devidamente (com as cartas da mão e o argumento 'primeiro').
         //JogadorAleatorioNewbie jogA = new JogadorAleatorioNewbie(mao1clone, true);
         //JogadorAleatorioFace jogB = new JogadorAleatorioFace(mao2clone, false);
-        Jogador jogA = new JogadorRA176596(mao1clone, true);
+        Jogador jogA = new JogadorRA188972(mao1clone, true);
         Jogador jogB = new JogadorAleatorio(mao2clone, false);
 
         // O Motor é construído
@@ -211,8 +211,8 @@ public class Main {
                 ArrayList<Carta> mao2clone = (ArrayList<Carta>) UnoptimizedDeepCopy.copy(Mao2);
 
                 // Inicializa os Jogadores devidamente (com as cartas da mão e o argumento 'primeiro').
-                Jogador jogA = new JogadorRA184403(mao1clone, moeda);
-                Jogador jogB = new JogadorAleatorio(mao2clone, !moeda);
+                Jogador jogA = new JogadorRA188972New(mao1clone, moeda);
+                Jogador jogB = new JogadorRA188972(mao2clone, !moeda);
 
                 // O Motor é construído
                 Motor partida;
