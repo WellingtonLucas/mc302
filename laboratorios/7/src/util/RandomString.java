@@ -19,6 +19,11 @@ public class RandomString {
 
   private final char[] buf;
 
+  public RandomString() {
+    random = new Random();
+    buf = new char[Integer.MAX_VALUE];
+  }
+
   public RandomString(Random gerador, int length) {
     if (length < 1)
       throw new IllegalArgumentException("length < 1: " + length);

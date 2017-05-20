@@ -1,0 +1,7 @@
+1 - Pois todas as classes específicas de cartas herdam de uma mesma classe em comum, Carta nesse contexto. Quando o método usar é invocado, o método correspondente à classe do objeto será invocado, i.e., a implementação da classe mais específica.
+
+2 - É uma relação de agregação. Pois o ciclo de vida dos objetos da classe Carta não está intrinsecamente ligado ao ciclo de vida do respectivo objeto instanciado da classe Mesa.
+
+3 - Associação. Pois um objeto do tipo Mesa é apenas um parâmetro de um método da classe ProcessadorJogada.
+
+4 -final
